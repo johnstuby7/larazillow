@@ -1,0 +1,11 @@
+sudo apt install php8.1
+sudo apt install php8.1-mbstring
+sudo apt install php8.1-mysql
+sudo apt-get install php8.2-dom
+sudo apt-get install php8.2-xml
+Navigate to the php.ini file located at /etc/php/8.1/cli/php.ini
+  sudo vim php.ini
+  uncomment extension=pdo_mysql
+
+
+
