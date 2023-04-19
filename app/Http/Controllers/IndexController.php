@@ -19,7 +19,7 @@ class IndexController extends Controller
         [
             'message'=> 'Hello From laravel'
         ]
-        );
+    );
    }
 
    public function show() 
