@@ -16,3 +16,12 @@ namespace App\Models
 Listing::all()
 
 
+Tailwind:
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+update app.css
+npm install -D @tailwindcss/forms
+update tailwind.config.js
+ plugins: [
+    require('@tailwindcss/forms'),
+  ],
