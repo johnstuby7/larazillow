@@ -14,3 +14,5 @@ Tinker:
 php artisan tinker
 namespace App\Models
 Listing::all()
+
+
