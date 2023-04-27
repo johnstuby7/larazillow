@@ -1,9 +1,9 @@
 <template>
   <Box>
-    <template #header>Make and Offer</template>
+    <template #header>Make an Offer</template>
     <div>
       <form>
-        <input type="text" class="input" />
+        <input v-model.number="form.amount" type="text" class="input" />
         <input
           v-model.number="form.amount"
           type="range" :min="min"
@@ -24,12 +24,12 @@
     </div>
   </Box>
 </template>
+
 <script setup>
-import Box from '@/Components/UI/Box.vue'
 import Price from '@/Components/Price.vue'
+import Box from '@/Components/UI/Box.vue'
 import { useForm } from '@inertiajs/vue3'
 import { computed } from 'vue'
-
 const props = defineProps({
   listingId: Number,
   price: Number,
